@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Team Task Manager (Full-Stack Web App)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern full-stack web application that allows teams to manage projects, assign tasks, and track progress with role-based access control.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+###  Authentication
+- User Signup & Login
+- Secure password hashing
+- JWT-based authentication
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###  Role-Based Access Control
+- **Admin**
+  - Create projects
+  - Assign tasks
+- **Member**
+  - View assigned tasks
+  - Update task status
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###  Project Management
+- Create and manage projects
+- View all projects
 
-### `npm test`
+### Task Management
+- Create tasks under projects
+- Assign tasks to users
+- Update task status:
+  - To Do
+  - In Progress
+  - Done
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###  Dashboard
+- Total tasks
+- Completed tasks
+- Pending tasks
+- Overdue tasks
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##  Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
+- React.js
+- Axios
+- React Router
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend
+- Flask
+- Flask SQLAlchemy
+- Flask Bcrypt
+- JWT Authentication
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Database
+- MySQL (Railway)
 
 ### Deployment
+- Backend: Railway
+- Frontend: Vercel / Railway
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Installation (Local Setup)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Clone Repository
+```bash
+git clone https://github.com/yourusername/team-task-manager.git
+cd team-task-manager
